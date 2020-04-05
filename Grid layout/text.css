@@ -1,9 +1,25 @@
 
+<<<<<<< HEAD
+.h1 {
+=======
 h1 {
+>>>>>>> b651a1d87e888253b4a4fefffaf1f8eab0440d91
     text-align: center;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 }
 
+<<<<<<< HEAD
+.h2 {
+    text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+.wrapper {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+=======
+>>>>>>> b651a1d87e888253b4a4fefffaf1f8eab0440d91
 p.date {
     text-align: right;
 }
