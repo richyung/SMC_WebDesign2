@@ -1,0 +1,201 @@
+body {
+  margin: 40px;
+}
+
+#toggleAssist
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+  position: relative;
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.wrapper {
+        display: grid;
+    grid-gap: 10px;
+        grid-template-columns: 400px 400px 400px;
+        grid-template-areas:
+    "header  header  header"
+        "sidebar content content"
+        "footer  footer  footer";
+        background-color: #fff;
+        color: #444;
+	
+	max-width: 1300px;
+	padding-left: 200px;
+	padding-right: 200px;
+	align-content: center;
+    }
+
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 50px;
+  font-size: 150%;
+}
+
+.header,
+.footer {
+  background-color: #444;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.topright {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* first responsive site */
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+	text-align: center
+}
+
+.logo {
+    max-width: 75px;
+    margin: 15px;
+	text-align: right
+}
+
+#toggleAssist,
+ul.nav-links {
+    display: none;
+}
+
+#toggleAssist:checked + ul.nav-links {
+    display: block;
+}
+
+.toggle-button {
+    width: 40px;
+    float: right;
+    margin: 15px;
+}
+
+ul.nav-links {
+    list-style: none;
+    padding-left: 0px;
+}
+
+ul.nav-links li {
+    padding: 10px;
+    border-bottom: 2px solid dodgerblue;
+}
+
+ul.nav-links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:black;
+}
+
+@media(min-width: 550px) {
+    .toggle-button {
+        display: none;
+    }
+
+    ul.nav-links {
+        display: block;
+        float: right;
+        margin-top: 35px;
+    }
+
+    ul.nav-links li {
+        display: inline-block;
+        border-bottom: none;
+    }
+
+} /* END OF MID-SCREEN MEDIA QUERY */
+
+@media(min-width: 960px) {
+    header {
+        width: 1200px;
+        margin: auto;
+    }
+	
+	
+	footer {
+		width: 1200px;
+		margin: auto
+	}
+} /* END OF LG-SCREEN MEDIA QUERY */
+
+body {
+ background-image: url("png");
+ background-color: #cccccc;
+}
+
+header {height:px;background-color:#A38861;clear:both;
+		text-align: left}
+
+footer {height:px;background-color:#A38861;clear:both; 
+	    text-align: left}
+
+h1 {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+	text-align: center
+}
+
+p {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+	text-align: center
+}
+
+
+<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+</style>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+
+/*slides*/
+.rslides {position: relative; list-style: none; overflow: hidden; height:437px; width: 100%; padding: 0; margin: 0;}
+
+.rslides li {-webkit-backface-visibility: hidden; position: absolute; display: none; width: 100%; left: 0; top: 0;}
+
+.rslides li:first-child {position: relative; display: block; float: left;}
+
+.rslides img {display: block; height: auto; float: left; width: 100%; border: 0;}
+
