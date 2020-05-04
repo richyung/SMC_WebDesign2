@@ -37,14 +37,14 @@
 		var redButton = document.getElementById("changetoRed");
 		
 		myHeader.style.color = "red";
-		myHeader.style.backgroundcolor = "purple";
+		myHeader.style.backgroundColor = "purple";
 		myHeader.style.fontsize = "56px";
 		
 		myHeader.innerText = "Hello, " + response;
 		console.log("Hello "+ 5 +" people");
 	
 		redButton.addEventListener("click", function (){
-			tealPane.style.backgroundcolor = 'red';
+			tealPane.style.backgroundColor = "red";
 			var notification = document.createElement("h5")
 			notification.innerText = "This is Red Now!"
 			tealPane.appendChild(notification);
