@@ -52,6 +52,24 @@ main {
     margin: auto;
 }
 
+.row {
+    display: flex;
+    margin: auto;
+    width: 100%;
+  }
+  
+.column {
+    flex: 25%;
+    padding: 5px;
+  }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} 
+
 section {
     padding: 20px;
 }
@@ -86,3 +104,4 @@ img {
         width: 650px;
     }
 }
+
