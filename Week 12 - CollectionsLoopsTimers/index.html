@@ -22,12 +22,12 @@
   </header>
   <hr>
   <div id="carousel">
-    <img id="carouselImg" src="quokkas1.jpg" alt="some very qute quokkas"/>
+    <img id="carouselImg" src="entertainment.jpg" alt="active entertainment"/>
   </div>
   <script>
     var sportsCats = ["basketball", "football", "baseball","hockey"];
     var videogamesCats = ["nintendo", "sony", "microsoft", "google"];
-    var musicCats = ["hiphop", "r&b", "rock","electronic"];
+    var musicCats = ["hip-Hop", "r&B", "rock","electronic"];
 
     var groupSelect = document.getElementById("group");
     var categorySelect = document.getElementById("category");
@@ -57,16 +57,16 @@
     }
   </script>
   <script>
-    var quokkaImgs = ["quokkas1.jpg", "quokkas2.jpg", "quokkas3.jpg"];
+    var basketballImgs = ["basketball1.jpeg", "basketball2.jpg", "basketball3.jpg"];
     var currentImg = 0;
     var carouselImg = document.getElementById("carouselImg");
 
     window.setInterval(quokkaGallery, 3000);
 
-    function quokkaGallery(){
+    function basketballGallery(){
       var nextImg = currentImg + 1;
-      if(nextImg == quokkaImgs.length) nextImg = 0;
-      carouselImg.src = quokkaImgs[nextImg];
+      if(nextImg == basketballImgs.length) nextImg = 0;
+      carouselImg.src = basketballImgs[nextImg];
       currentImg = nextImg;
     }
   </script>
