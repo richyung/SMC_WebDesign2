@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <div class="long-ps">
+      <p id="someP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nostrum aut dolore voluptatibus
+        distinctio, tempore obcaecati at illum earum libero eaque, possimus blanditiis dolorum cumque. Quia atque earum
+        laudantium aliquid!</p>
+
+      <p class="long-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nostrum aut dolore
+        voluptatibus distinctio, tempore obcaecati at illum earum libero eaque, possimus blanditiis dolorum cumque. Quia
+        atque earum laudantium aliquid!</p>
+    </div>
+	  
+<style>
+	.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+	
+}
+</style>
+	  
+<div class="grid-container">
+  <div class="grid-item"><img src="baseball1.jpg"
+        alt="baseball" width="250" height="300" class="hideable-img"></div>
+  <div class="grid-item"><img src="basketball1.jpeg"
+        alt="basketball" width="250" height="300" class="hideable-img2"></div>
+  <div class="grid-item"><img src="hockey1.jpeg"
+        alt="hockey" width="250" height="300" class="hideable-img3"></div>  
+  <div class="grid-item"><img src="football1.jpg"
+        alt="football" width="250" height="300" class="hideable-img4"></div>
+  </div>
+	  
+
+    <button id="fadeToggleBtn">Click me to toggle the Baseball fading</button>
+	<button id="fadeToggleBtn2">Click me to toggle the Basketball fading</button>
+	<button id="fadeToggleBtn3">Click me to toggle the Puck fading</button> 
+	<button id="fadeToggleBtn4">Click me to toggle the Football fading</button> 
+	  
+	
+	<button id="slideUpBtn">Click me to slide the Baseball</button>
+	<button id="slideUpBtn2">Click me to slide the Basketball</button>
+	<button id="slideUpBtn3">Click me to slide the Puck</button>
+	<button id="slideUpBtn4">Click me to slide the Football</button>
+	   
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      //everything should go in here!!!
+      $("#clickB").click(function () {
+        $(".long-ps").append(
+          '<p class="long-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nostrum aut dolore voluptatibus distinctio, tempore obcaecati at illum earum libero eaque, possimus blanditiis dolorum cumque. Quia atque earum laudantium aliquid!</p>'
+          );
+      });
+
+
+      $("#fadeToggleBtn").click(function () {
+        $('.hideable-img').fadeToggle(2000);
+      })
+ 	  $("#fadeToggleBtn2").click(function () {
+        $('.hideable-img2').fadeToggle(2000);  
+      })
+		 $("#fadeToggleBtn3").click(function () {
+        $('.hideable-img3').fadeToggle(2000);
+      })
+		 $("#fadeToggleBtn4").click(function () {
+        $('.hideable-img4').fadeToggle(2000);
+      })
+		
+      $("#slideUpBtn").click(function () {
+        $('.hideable-img').slideUp(2000);
+      })
+		$("#slideUpBtn2").click(function () {
+        $('.hideable-img2').slideUp(2000);
+      })
+		$("#slideUpBtn3").click(function () {
+        $('.hideable-img3').slideUp(2000);
+      })
+		$("#slideUpBtn4").click(function () {
+        $('.hideable-img4').slideUp(2000);
+      })
+
+      //end of customAnim click
+
+    })//end of document ready
+  </script>
+</body>
+
+</html>
