@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/main.css">
+
+<title>Home</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="scripts.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+
+<script>
+  $(function() {
+    $(".rslides").responsiveSlides();
+  });
+</script>
+
+<style>
+    p.round1 {
+border: 2px solid red;
+border-radius: 5px;
+}
+</style>
+
+</head>
+<header>
+    <nav>
+      <img class="logo" src="css/images/untilfreedom.jpg" alt=" Until Freedom Logo">
+		
+
+      <label for="toggleAssist">
+        <img src="css/images/menu.png" alt="menu icon" class="toggle-button">
+      </label>
+      <input type="checkbox" id="toggleAssist">
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Donations</a></li>
+        <li><a href="">Blog</a></li>
+		<li><a href="">About</a></li>
+      </ul>
+    </nav>
+
+  </header>
+	
+<body>
+    <h2>Responsive Image Gallery</h2>
+<h4>Resize the browser window to see the effect.</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="css/images/protest1.jpg">
+      <img src="css/images/protest1.jpg" alt="protest1" width="600" height="400">
+    </a>
+    <div class="desc">UNTIL FREEDOM
+        We are activists, movement lawyers, artists, & survivors of racial injustice. We will build, create, organize & fight</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="css/images/uf2.jpg">
+      <img src="css/images/uf2.jpg" alt="Mysone" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
+
+    <footer>
+        <nav>
+          <img class="logo" src="css/images/untilfreedom.jpg" alt="Until Freedom Logo">
+    
+          <ul class="nav-links">
+             <img class="fb" src="css/images/fb.png" width="30px" height="30px" alt="fb" a href="https://www.facebook.com/UntilFreedomOfficial/">  
+          </ul>
+        </nav>
+      </footer>
+</body>
+</html>
