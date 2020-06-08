@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="css/main.css">
+
+<title>donations</title>
+</head>
+<header>
+    <nav>
+      <img class="logo" src="css/images/untilfreedom.jpg" alt=" Until Freedom Logo">
+		
+
+      <label for="toggleAssist">
+        <img src="css/images/menu.png" alt="menu icon" class="toggle-button">
+      </label>
+      <input type="checkbox" id="toggleAssist">
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Donations</a></li>
+        <li><a href="">Blog</a></li>
+		<li><a href="">About</a></li>
+      </ul>
+    </nav>
+
+  </header>
+<body>
+    <form action="/action_page.php" method="post">
+	
+        <fieldset>
+        <label>Name</label>
+        <br/>
+        <input type="text" maxlength="25" placeholder="First Last">
+        <br/>
+        <label>Email</label>
+        <br/>
+        <input type="email" maxlength="25" placeholder="email@email.com">
+        <br/>
+        <label>Memo</label>
+        <br/>
+        <input type="url" maxlength="25" placeholder="">
+        <br/><label>Amount</label><br/>
+        $<input id="numb" placeholder="USD">
+        <br/><br/>	
+        <p>
+        <label>
+        <input type="radio" name="RadioGroup1" value="Credit Card" id="RadioGroup1_0">
+        Credit Card</label>
+          <br>
+          <label>
+            <input type="radio" name="RadioGroup1" value="PayPal" id="RadioGroup1_1">
+            PayPal</label>
+          <br>
+          <label>
+            <input type="radio" name="RadioGroup1" value="Venmo" id="RadioGroup1_2">
+            Venmo</label>
+          <br>
+        </p>
+        
+        
+
+        <button type="button" onclick="myFunction()">Submit</button>
+
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+              var x, text;
+            
+              // Get the value of the input field with id="numb"
+              x = document.getElementById("numb").value;
+            
+              // If x is Not a Number or less than one or greater than 10
+              if (isNaN(x) || x < 1 || x > 1000000) {
+                text = "Only dollar amounts please";
+              } else {
+                text = "Thanks for your contribution!";
+              }
+              document.getElementById("demo").innerHTML = text;
+            }
+            </script>
+        </fieldset>
+
+        <footer>
+            <nav>
+              <img class="logo" src="css/images/untilfreedom.jpg" alt="Until Freedom Logo">
+        
+              <ul class="nav-links">
+                 <img class="fb" src="css/images/fb.png" width="30px" height="30px" alt="fb" a href="https://www.facebook.com/UntilFreedomOfficial/">  
+              </ul>
+            </nav>
+          </footer>
+</body>
+</html>
