@@ -6,6 +6,16 @@
 <link rel="stylesheet" href="css/main.css">
 
 <title>donations</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("fieldset").toggle();
+  });
+});
+</script>
+
 </head>
 <header>
     <nav>
@@ -28,7 +38,7 @@
   </header>
 <body>
     <form action="/action_page.php" method="post">
-	
+
         <fieldset>
         <label>Name</label>
         <br/>
@@ -61,26 +71,29 @@
         
         
 
-        <button type="button" onclick="myFunction()">Submit</button>
-
         <p id="demo"></p>
-        <script>
-            function myFunction() {
-              var x, text;
-            
-              // Get the value of the input field with id="numb"
-              x = document.getElementById("numb").value;
-            
-              // If x is Not a Number or less than one or greater than 10
-              if (isNaN(x) || x < 1 || x > 1000000) {
-                text = "Only dollar amounts please";
-              } else {
-                text = "Thanks for your contribution!";
-              }
-              document.getElementById("demo").innerHTML = text;
-            }
-            </script>
+        
         </fieldset>
+    </form>
+
+            <button type="button" onclick="myFunction()">Submit</button>
+
+            <script>
+                function myFunction() {
+                  var x, text;
+                
+                  // Get the value of the input field with id="numb"
+                  x = document.getElementById("numb").value;
+                
+                  // If x is Not a Number or less than one or greater than 10
+                  if (isNaN(x) || x < 1 || x > 1000000) {
+                    text = "Only dollar amounts please";
+                  } else {
+                    text = "Thanks for your contribution!";
+                  }
+                  document.getElementById("demo").innerHTML = text;
+                }
+                </script>
 
         <footer>
             <nav>
