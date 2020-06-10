@@ -39,7 +39,7 @@ border-radius: 5px;
 
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="">Donations</a></li>
+        <li><a href="donations.html">Donations</a></li>
         <li><a href="">Blog</a></li>
 		<li><a href="">About</a></li>
       </ul>
@@ -48,54 +48,68 @@ border-radius: 5px;
   </header>
 	
 <body>
-    <h2>Responsive Image Gallery</h2>
-<h4>Resize the browser window to see the effect.</h4>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="css/images/protest1.jpg">
-      <img src="css/images/protest1.jpg" alt="protest1" width="640" height="400">
-    </a>
-    <div class="desc">UNTIL FREEDOM
-        We are activists, movement lawyers, artists, & survivors of racial injustice. We will build, create, organize & fight</div>
+  <h2>UNTIL FREEDOM</h2>
+  <p>
+    We are activists, movement lawyers, artists, & survivors of racial injustice. We will build, create, organize & fight</p>
+  
+  <div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="css/images/protest1.jpg" width="640" height="400">
+    <div class="text">Build</div>
+      </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="css/images/uf2.jpg" width="640" height="400">
+    <div class="text">Create</div>
   </div>
-</div>
 
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="css/images/uf2.jpg">
-      <img src="css/images/uf2.jpg" alt="Mysonne" width="640" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="css/images/uf3.jpg" width="640" height="400">
+    <div class="text">Organize</div>
   </div>
-</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="css/images/uf3.jpg">
-      <img src="css/images/uf3.jpg" alt="Tamika" width="640" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="css/images/uf1.jpg" width="640" height="400">
+    <div class="text">Fight</div>
   </div>
-</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="css/images/protest2.jpg">
-      <img src="css/images/protest2.jpg" alt="UntilFreedom" width="640" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
   </div>
-</div>
-
-<div class="clearfix"></div>
-
-<div style="padding:6px;">
-  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
-  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-</div>
-
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  
+  <script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+  }
+  </script>
     <footer>
         <nav>
           <img class="logo" src="css/images/untilfreedom.jpg" alt="Until Freedom Logo">

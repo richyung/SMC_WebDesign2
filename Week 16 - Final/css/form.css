@@ -1,0 +1,155 @@
+fieldset {
+    border: none;
+    padding: 0px;
+    margin-bottom: 30px;
+}
+
+.donate-form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #024873;
+    margin: 20px;
+    justify-content: center;
+}
+
+.donate-form label {
+    margin: 5px 10px 5px 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #024873;
+}
+
+.donate-form input,
+select {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #c4e6d1;
+    width: 100%;
+}
+
+.donate-form option {
+    color: #024873;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.donate-form .field {
+    margin: 10px 0px;
+}
+
+.donate-form button {
+    padding: 10px 20px;
+    background-color: #F25E5E;
+    border: 1px solid #F25E5E;
+    color: #024873;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.donate-form .amount {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+.donate-form .amount .button {
+    width: 45%;
+    height: 50px;
+    background-color: #F25E5E;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.donate-form .amount input,
+
+.amount p {
+    margin: 0 auto;
+}
+
+.donate-form .amount .selected {
+    background-color: #024873;
+}
+
+.donate-form .amount .button input {
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    border-bottom: 2px solid white;
+}
+
+.button input {
+    padding: 0px;
+}
+
+input {
+    box-sizing: border-box
+}
+
+.set-amount {
+    max-width: 96px;
+}
+
+.replace {
+    margin: 50px;
+}
+
+.hidden-all {
+    display: none;
+}
+
+@media(min-width:540px) {
+    .donate-form .amount .button:hover {
+        background-color: #D95555;
+    }
+
+    .button:hover {
+        background-color: #D95555;
+    }
+}
+
+
+@media (min-width: 800px) {
+    .donate-form input {
+        margin: 10px 0;
+    }
+
+    .donate-form {
+        flex-direction: column;
+    }
+
+    fieldset {
+        padding: 25px;
+    }
+
+    .form-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .donate-form button {
+        padding: 10px 100px;
+    }
+}
+
+@media(min-width:1000px) {
+    .donate-form button {
+        padding: 10px 180px;
+    }
+}
