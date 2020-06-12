@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/toggle.css">
+
+<title>About</title>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+<script src="jquery.js"></script>
+<script src="jquery.flip.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+
+<script>
+ $(function($) {
+  $("#card").flip(); 
+});
+</script>
+
+<style>
+    p.round1 {
+border: 2px solid red;
+border-radius: 5px;
+}
+</style>
+
+</head>
+<header>
+    <nav>
+      <img class="logo" src="css/images/untilfreedom.jpg" alt=" Until Freedom Logo">
+		
+
+      <label for="toggleAssist">
+        <img src="css/images/menu.png" alt="menu icon" class="toggle-button">
+      </label>
+      <input type="checkbox" id="toggleAssist">
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Donations</a></li>
+        <li><a href="">Blog</a></li>
+		<li><a href="">About</a></li>
+      </ul>
+    </nav>
+
+  </header>
+	
+  <div id="card"> 
+    <div class="front"> 
+      <h2>Our Story </h2>
+      <p>Until Freedom is an intersectional social justice organization rooted in the leadership of diverse people of color to address systemic and racial injustice. <br> 
+        <br> At Until Freedom, we believe that those closest to the pain are closest to the solution, therefore, we focus on investing in those who are the most directly impacted by cyclical poverty, inequality, and state violence. <br>
+        <br> We are a clearinghouse for advocates, new & budding activists, seasoned community organizers, students, movement lawyers, entertainers and artists, policy experts, formerly & currently incarcerated individuals, and survivors of gun violence to work linearly to uplift all of our people.<br>
+        <br> Everyone is worthy, everyone is needed to win. </p>
+    </div> 
+    <div class="back">
+      <h2>Our Mission</h2> <p> We seek to fulfill our mission through:
+
+
+
+        Campaign development with tangible demands - when presented with a tragedy, a  case of injustice, or bad policy we have the ability to build a multi-faceted and multi-pronged campaign that includes digital communications, messaging, a power analysis, and winnable asks.
+        
+        Rapid response and triage - we have the training and ability to quickly mobilize contacts, organizers, faith leaders, and organizations. 
+        
+        Training and resource development with a focus on underserved communities - we have expertise on a wide range of issues and have a track record of providing sought out workshops and trainings in organizing 101, building your brand, how to use social media effectively, media 101, financial literacy, crisis communications, and management, amongst other topics and subjects.
+        
+        Media advocacy - effectively using the media to raise awareness on important issues impacting Black and brown communities through editorial board meetings, opinion pieces, relationship building
+        
+        Partnerships with influencers to uplift campaigns and stories - we act as a clearinghouse for influencers and artists on issue campaigns and provide resources and information so they can amplify important community-led solutions
+        
+        Faith-based outreach and engagement </p>
+    </div> 
+  </div>
+  
+    <footer>
+        <nav>
+          <img class="logo" src="css/images/untilfreedom.jpg" alt="Until Freedom Logo">
+    
+          <ul class="nav-links">
+             <img class="fb" src="css/images/fb.png" width="30px" height="30px" alt="fb" a href="https://www.facebook.com/UntilFreedomOfficial/">  
+          </ul>
+        </nav>
+      </footer>
+</body>
+</html>

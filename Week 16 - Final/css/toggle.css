@@ -1,0 +1,12 @@
+p {
+    background-color: lightgrey;
+    width: 1200x;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 70px;
+    position: center;
+  }
+
+  h2 {
+      height: 20px;
+  }
