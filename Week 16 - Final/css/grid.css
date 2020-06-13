@@ -1,118 +1,118 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: Arial;
-  }
-  
-  .header {
-    text-align: center;
-    padding: 32px;
-  }
-  
-  .row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
   .column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
   }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
   }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
+}
 
 
-          /*SLIDES*/
-          .rslides {position: relative; list-style: none; overflow: hidden; height:437px; width: 100%; padding: 0; margin: 0;}
-        
-          .rslides li {-webkit-backface-visibility: hidden; position: absolute; display: none; width: 100%; left: 0; top: 0;}
-          
-          .rslides li:first-child {position: relative; display: block; float: left;}
-          
-          .rslides img {display: block; height: auto; float: left; width: 100%; border: 0;}
-  
-          /*GALLERY*/
-          
+        /*SLIDES*/
+        .rslides {position: relative; list-style: none; overflow: hidden; height:437px; width: 100%; padding: 0; margin: 0;}
       
-          div.gallery {
-              border: 1px solid #ccc;
-            }
-            
-            div.gallery:hover {
-              border: 1px solid #777;
-            }
-            
-            div.gallery img {
-              width: 100%;
-              height: auto;
-            }
-            
-            div.desc {
-              padding: 15px;
-              text-align: center;
-            }
-            
-            * {
-              box-sizing: border-box;
-            }
-            
-            
-            .clearfix:after {
-              content: "";
-              display: table;
-              clear: both;
-            }
-  
-            .input[type=submit] {
-              background-color: #4CAF50;
-              border: none;
-              color: white;
-              padding: 16px 32px;
-              text-decoration: none;
-              margin: 4px 2px;
-              cursor: pointer;
-            }
-  
+        .rslides li {-webkit-backface-visibility: hidden; position: absolute; display: none; width: 100%; left: 0; top: 0;}
         
-            #more {display: none;}
+        .rslides li:first-child {position: relative; display: block; float: left;}
+        
+        .rslides img {display: block; height: auto; float: left; width: 100%; border: 0;}
 
-            .h2{
-                height: 20px;
+        /*GALLERY*/
+        
+    
+        div.gallery {
+            border: 1px solid #ccc;
+          }
+          
+          div.gallery:hover {
+            border: 1px solid #777;
+          }
+          
+          div.gallery img {
+            width: 100%;
+            height: auto;
+          }
+          
+          div.desc {
+            padding: 15px;
+            text-align: center;
+          }
+          
+          * {
+            box-sizing: border-box;
+          }
+          
+          
+          .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
 
-            }
+          .input[type=submit] {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
 
-            .p{
-                text-align: center;
-                height: 20px;
-            }
+      
+          #more {display: none;}
+
+          .h2{
+              height: 20px;
+
+          }
+
+          .p{
+              text-align: center;
+              height: 20px;
+          }

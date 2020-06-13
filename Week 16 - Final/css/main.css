@@ -33,7 +33,7 @@ ul.nav-links {
 
 ul.nav-links li {
     padding: 10px;
-    border-bottom: 2px solid dodgerblue;
+    border-bottom: 2px solid purple;
 }
 
 ul.nav-links a {
@@ -78,10 +78,10 @@ body {
  background-color: #ffffff;
 }
 
-header {height:px;background-color:#A38861;clear:both;
+header {height:px;background-color:white;clear:both;
 		text-align: left}
 
-footer {height:px;background-color:#A38861;clear:both; 
+footer {height:px;background-color:white;clear:both; 
 	    text-align: left}
 
         h1 {
@@ -123,6 +123,7 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
+  
 }
 
 /* Caption text */
@@ -143,6 +144,7 @@ img {vertical-align: middle;}
   padding: 8px 12px;
   position: absolute;
   top: 0;
+ 
 }
 
 /* The dots/bullets/indicators */
@@ -182,3 +184,26 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+/* Text Blocks in image */
+
+.numbertext{
+  position: relative;
+  font-family: Arial;
+}
+.container {
+  position: center;
+  font-family: Arial;
+}
+
+.text-block {
+  position: center;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 200px;
+}
+
