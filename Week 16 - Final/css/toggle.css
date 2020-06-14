@@ -10,3 +10,10 @@ p {
   h2 {
       height: 20px;
   }
+
+.front {
+    width: 900px;
+}
+.back {
+    width: 900px;
+}
