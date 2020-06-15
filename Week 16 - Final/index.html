@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="css/main.css">
 
@@ -18,19 +19,10 @@
 <style>
   
 
-  /* button*/
-.btn {
-  border-color: #4B0082;
-  color: purple;
-}
-.btn:hover {
-  background:#D8BFD8;
-  color: white;
-}
-
-  * {
-    box-sizing: border-box;
-  }
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
 
 .column {
   float: left;
@@ -39,11 +31,7 @@
   padding: 5px;
 }
 
-div.mySlides.fade{
-  height: 650px;
-  width: 1000px;
-  position: center;
-}
+
 
 /* Clearfix (clear floats) */
 .row::after {
@@ -77,19 +65,31 @@ div.mySlides.fade{
     padding: 20px;
   }
 
-  .responsive {
+.box {
   max-width: 100%;
   height: 200px;
 }
 
 .h1 {
-  height: fit-content;
-  width: fit-content;
+  height: auto;
+  max-width: 100%;
 }
 
 .text-block {
-  position: center;
-  width: 1000px;
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  background:  rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  max-width: 100%;
+  height: auto;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -99,19 +99,19 @@ div.mySlides.fade{
 </head>
 <header>
     <nav>
+
       <img class="logo" src="css/images/untilfreedom.jpg" alt=" Until Freedom Logo">
-		
 
       <label for="toggleAssist">
         <img src="css/images/menu.png" alt="menu icon" class="toggle-button">
       </label>
       <input type="checkbox" id="toggleAssist">
-
+      
       <ul class="nav-links">
-        <button class="btn"><li><a href="index.html">Home</a></li></button>
-        <button class="btn"><li><a href="donations.html">Donate</a></li></button>
-        <button class="btn"><li><a href="blog.html">Blog</a></li></button>
-		    <button class="btn"><li><a href="about.html">About</a></li></button>
+        <li><a src="css/images/untilfreedom.jpg" href="index.html">Home</a></li>
+        <li><a href="donations.html">Donate</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
 
@@ -127,26 +127,26 @@ div.mySlides.fade{
   
   <div class="mySlides fade">
     <div class="numbertext">1 / 4</div>
-    <img src="css/images/protest1.jpg"  width="1000" height="600">
+    <img src="css/images/protest1.jpg" class="responsive" width="1000" height="600">
     <div class="text-block">Build</div>
   </div>
   
   <div class="mySlides fade">
     <div class="numbertext">2 / 4</div>
-    <img src="css/images/uf2.jpg" width="1000" height="600">
+    <img src="css/images/uf2.jpg" class="responsive" width="1000" height="600">
     <div class="text-block">Create</div>
   </div>
 
   
   <div class="mySlides fade">
     <div class="numbertext">3 / 4</div>
-    <img src="css/images/uf3.jpg" width="1000" height="600">
+    <img src="css/images/uf3.jpg" class="responsive" width="1000" height="600" >
     <div class="text-block">Organize</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">4 / 4</div>
-    <img src="css/images/uf1.jpg" width="1000" height="600">
+    <img src="css/images/uf1.jpg" class="responsive" width="1000" height="600">
     <div class="text-block">Fight</div>
   </div>
   
@@ -165,13 +165,14 @@ div.mySlides.fade{
   <br>
   <h3>Until Freedom founders and leaders have a proven track record of two decades of collective work in criminal justice reform, gun violence prevention, immigrant rights, and cultural engagement. Our expertise lies in the areas of strategic campaign development, social media communications, mobilization, building grassroots support, media advocacy and policy reform.</h3>
   <br>
-  <h2>Join Us!</h2>
+  <button class="btn home"><h2>Join Us!</h2></button>
   <br>
   <br>
   <br>
-  <h1>We stand as justice activists in all corners of society</h1>
   <br>
+  <h1 style = "color: #f1f1f1; background-color: #4B0082">We stand as justice activists in all corners of society</h1>
   <br>
+  
   
   <script>
 
@@ -205,7 +206,7 @@ div.mySlides.fade{
 <div class="row"> 
   <div class="column">
     <div class="container">
-    <img src="css/images/me.jpeg" class="responsive" width="300" height="300">
+    <img src="css/images/me.jpeg" class="box" width="300" height="300">
     <div class="content">
       <h1>Media</h1>
     </div>
@@ -213,7 +214,7 @@ div.mySlides.fade{
 </div>
 <div class="column">
   <div class="container">
-    <img src="css/images/p.jpg" class="responsive" width="300" height="300">
+    <img src="css/images/p.jpg" class="box" width="300" height="300">
     <div class="content">
       <h1>Politics</h1>
     </div>
@@ -221,7 +222,7 @@ div.mySlides.fade{
 </div>
 <div class="column">
   <div class="container">
-    <img src="css/images/b.png" class="responsive" width="300" height="300">
+    <img src="css/images/b.png" class="box" width="300" height="300">
     <div class="content">
       <h1>Business</h1>
     </div>
@@ -232,7 +233,7 @@ div.mySlides.fade{
 <div class="row">
   <div class="column">
     <div class="container">
-    <img src="css/images/e.jpg" class="responsive" width="300" height="300">
+    <img src="css/images/e.jpg" class="box" width="300" height="300">
     <div class="content">
       <h1>Education</h1>
     </div>
@@ -240,7 +241,7 @@ div.mySlides.fade{
 </div>
 <div class="column">
   <div class="container">
-    <img src="css/images/t.gif" class="responsive" width="300" height="300">
+    <img src="css/images/t.gif" class="box" width="300" height="300">
     <div class="content">
       <h1>Technology</h1>
     </div>
@@ -248,7 +249,7 @@ div.mySlides.fade{
 </div>
 <div class="column">
   <div class="container">
-    <img src="css/images/c.png" class="responsive" width="300" height="300">
+    <img src="css/images/c.png" class="box" width="300" height="300">
     <div class="content">
     <h1>Community</h1>
     </div>
@@ -267,7 +268,9 @@ div.mySlides.fade{
             <li><a href="donations.html">Donate</a></li>
             <li><a href="blog.html">Blog</a></li>
 		        <li><a href="about.html">About</a></li>
-             <img class="fb" src="css/images/fb.png" width="30px" height="30px" alt="fb" a href="https://www.facebook.com/UntilFreedomOfficial/">  
+             <img class="fb" src="css/images/036-facebook copy.png" width="30px" height="30px" alt="fb" a href="https://www.facebook.com/UntilFreedomOfficial/">  
+             <img class="ig" src="css/images/029-instagram copy.png" width="30px" height="30px" alt="fb" a href="">  
+             <img class="ig" src="css/images/008-twitter copy.png" width="30px" height="30px" alt="fb" a href="">  
           </ul>
         </nav>
       </footer>
