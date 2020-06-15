@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <link rel="stylesheet" href="css/main.css">
 
@@ -38,6 +39,13 @@ img {vertical-align: middle;}
   content: "";
   clear: both;
   display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 675px) {
+  .column {
+    width: 100%;
+  }
 }
   
   body {
@@ -75,6 +83,12 @@ img {vertical-align: middle;}
   max-width: 100%;
 }
 
+.h3 {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 20px;
+}   
+
 .text-block {
   position: absolute;
   max-width: 100%;
@@ -92,8 +106,26 @@ img {vertical-align: middle;}
   height: auto;
 }
 
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
 
+.button:hover {
+  background-color: #4B0082;
+}
 
+#text {
+  width: 500px;
+}
   </style>
 
 </head>
@@ -163,9 +195,10 @@ img {vertical-align: middle;}
   </div>
 
   <br>
-  <h3>Until Freedom founders and leaders have a proven track record of two decades of collective work in criminal justice reform, gun violence prevention, immigrant rights, and cultural engagement. Our expertise lies in the areas of strategic campaign development, social media communications, mobilization, building grassroots support, media advocacy and policy reform.</h3>
+  <h3>Until Freedom founders and leaders have a proven track record of two decades of collective work in criminal justice reform, gun violence prevention, immigrant rights, and cultural engagement.</h3> 
+  <h3>Our expertise lies in the areas of strategic campaign development, social media communications, mobilization, building grassroots support, media advocacy and policy reform.</h3>
   <br>
-  <button class="btn home"><h2>Join Us!</h2></button>
+  <button class="button"><h2><a href="donations.html">Join Us!</a></h2></button>
   <br>
   <br>
   <br>
@@ -259,20 +292,23 @@ img {vertical-align: middle;}
 
 
     <footer>
-
-        <nav>
-          <img class="logo" src="css/images/untilfreedom.jpg" alt="Until Freedom Logo">
-    
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="donations.html">Donate</a></li>
-            <li><a href="blog.html">Blog</a></li>
-		        <li><a href="about.html">About</a></li>
-             <img class="fb" src="css/images/036-facebook copy.png" width="30px" height="30px" alt="fb" a href="https://www.facebook.com/UntilFreedomOfficial/">  
-             <img class="ig" src="css/images/029-instagram copy.png" width="30px" height="30px" alt="fb" a href="">  
-             <img class="ig" src="css/images/008-twitter copy.png" width="30px" height="30px" alt="fb" a href="">  
-          </ul>
-        </nav>
+      <nav>
+        <div class="x">
+          <div class="y">
+           <img src="css/images/036-facebook copy.png" class="logo-bottom"  alt="fb" a href="https://www.facebook.com/UntilFreedomOfficial/">  
+          </div>
+           <div class="y">
+           <img src="css/images/029-instagram copy.png" class="logo-bottom" alt="fb" a href="https://www.instagram.com/untilfreedom/">  
+          </div>
+           <div class="y">
+           <img src="css/images/008-twitter copy.png" class="logo-bottom" alt="fb" a href="https://twitter.com/untilfreedom">
+          </div>
+        </div>
+        <br>   
+        <div class = "a" style="font-size: xx-small;">We are a 501(c)(3) non-profit organization. Funds raised through donations go towards Until Freedom's efforts for social justice.</div>
+        <br>
+        <div class = "a" style="font-size: xx-small;">©2020 by Until Freedom. All rights reserved.</div>
+      </nav>
       </footer>
 </body>
 </html>

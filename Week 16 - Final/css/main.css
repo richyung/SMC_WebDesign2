@@ -13,6 +13,28 @@ body {
   text-align: right
 }
 
+.logo-bottom {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30px;
+}
+
+.x {
+  display: flex;
+}
+
+.y {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+div.a {
+  text-align: center;
+  padding-right: 35px;
+}
+
+
 #toggleAssist,
 ul.nav-links {
   display: none;
@@ -63,11 +85,11 @@ ul.nav-links a {
 
 }
   /* button*/
-.btn {
+.w3-btn {
   border-color: #4B0082;
   color: purple;
 }
-.btn:hover {
+.w3-btn:hover {
   background:#D8BFD8;
   color: white;
 }    
@@ -140,7 +162,7 @@ footer {height:px;background-color:white;clear:both;
           text-align: center;
         }
        
-   
+ 
        
         
 /*index*/

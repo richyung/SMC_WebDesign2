@@ -2,8 +2,8 @@ p {
     background-color: white;
     width: 1200x;
     border: 15px solid purple;
-    padding: 50px;
-    margin: 70px;
+    padding: 30px;
+    margin: 20px;
     position: center;
   }
 
@@ -16,4 +16,7 @@ p {
 }
 .back {
     width: 900px;
+}
+.h3 {
+    position: bottom;
 }
