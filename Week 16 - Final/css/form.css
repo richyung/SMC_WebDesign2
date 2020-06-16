@@ -166,3 +166,7 @@ input {
         padding: 10px 180px;
     }
 }
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
