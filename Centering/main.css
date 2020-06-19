@@ -1,0 +1,77 @@
+body {
+  background: #f06d06;
+}
+
+main {
+  background: white;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.center {
+  margin: 0 auto;
+  width: 200px;
+  background: black;
+  padding: 20px;
+  color: white;
+}
+
+  
+  table {
+    background: white;
+    width: 240px;
+    border-collapse: separate;
+    margin: 20px;
+    height: 250px;
+  }
+  
+  table td {
+    background: black;
+    color: white;
+    padding: 20px;
+    border: 10px solid white;
+    /* default is vertical-align: middle; */
+  }
+  
+  .center-table {
+    display: table;
+    height: 250px;
+    background: white;
+    width: 240px;
+    margin: 20px;
+  }
+  .center-table p {
+    display: table-cell;
+    margin: 0;
+    background: black;
+    color: white;
+    padding: 20px;
+    border: 10px solid white;
+    vertical-align: middle;
+  }
+
+  .known {
+    background: black;
+    color: white;
+    width: 200px;
+    height: 100px;
+    margin: -70px 0 0 -120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+  }
+
+
+ .unknown {
+    background: black;
+    color: white;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    resize: both;
+    overflow: auto;
+  }
